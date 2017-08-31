@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    >
+    <LinearLayout style="@style/buttons"
+        android:gravity="left">
+        <EditText android:id="@+id/txtSearch"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/noToSearch"
+            />
+        <ImageView
+            style="@style/button_picture"
+            android:src="@drawable/bt1_search"
+            android:onClick="btnSearch"
+            />
+    </LinearLayout>
+    <View style="@style/line" />
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        >
+        <TextView style="@style/label" android:text ="@string/noDept" />
+
+        <EditText android:id="@+id/txtNoDept" style ="@style/input" />
+
+        <TextView style="@style/label" android:text ="@string/noRegion" />
+
+        <EditText android:id="@+id/txtNoRegion" style="@style/input" />
+
+        <TextView style="@style/label" android:text ="@string/nomDept" />
+
+        <EditText android:id="@+id/txtNom" style="@style/input" />
+
+        <TextView style="@style/label" android:text ="@string/nomStdDept" />
+
+        <EditText android:id="@+id/txtNomStd" style ="@style/input" />
+
+        <TextView style="@style/label" android:text ="@string/areaDept" />
+
+        <EditText android:id="@+id/txtSurface" style="@style/input" />
+
+        <TextView style="@style/label" android:text ="@string/createdDateDept" />
+
+        <EditText android:id="@+id/txtDateCreation" style="@style/input" />
+
+        <TextView style="@style/label" android:text ="@string/capitalDept" />
+
+        <EditText android:id="@+id/txtChefLieu" style="@style/input" />
+
+        <TextView style="@style/label" android:text ="@string/urlDept" />
+
+        <EditText android:id="@+id/txtUrlWiki" style="@style/input" />
+
+    </GridLayout>
+
+    Base de données SQLITE - Application de gestion des départements - Page 9
+    <LinearLayout style="@style/buttons">
+
+        <ImageView style="@style/button_picture"
+            android:src="@drawable/bt1_add"
+            android:onClick="btnClear"
+            />
+        <ImageView style="@style/button_picture"
+            android:src="@drawable/bt1_delete"
+            android:onClick="btnDelete"
+            />
+        <ImageView style="@style/button_picture"
+            android:src="@drawable/bt1_save"
+            android:onClick="btnSave"
+            />
+    </LinearLayout>
+
+</LinearLayout>
